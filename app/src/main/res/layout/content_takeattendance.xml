@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="info.androidhive.pathshala.activity.Takeattendance"
+    tools:showIn="@layout/activity_takeattendance">
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROLL"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewroll"
+        android:layout_marginTop="66dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dip"
+        android:id="@+id/textViewname"
+        android:layout_alignTop="@+id/textViewroll"
+        android:layout_toRightOf="@+id/textViewroll"
+        android:layout_toEndOf="@+id/textViewroll" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESENT"
+        android:textColor="#000000"
+        android:layout_marginRight="10dip"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewp"
+        android:layout_above="@+id/student_list"
+        android:layout_toLeftOf="@+id/textViewa"
+        android:layout_toStartOf="@+id/textViewa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABSENT"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewa"
+        android:layout_alignTop="@+id/textViewp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:id="@+id/student_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textViewroll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Attendance"
+        android:id="@+id/button2"
+        android:onClick="senddata"
+        android:background="#8053c68c"
+        android:layout_marginBottom="10dip"
+        android:layout_alignRight="@+id/textViewa"
+        android:layout_alignEnd="@+id/textViewa"
+        android:layout_above="@+id/textViewname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+</RelativeLayout>

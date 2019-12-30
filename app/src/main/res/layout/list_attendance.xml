@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/abc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dip"
+        android:id="@+id/tvsr"
+        android:layout_alignTop="@+id/tvsn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Bhavik Chandora"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dip"
+        android:textSize="15sp"
+        android:id="@+id/tvsn"
+        android:layout_alignTop="@+id/tvtc"
+        android:layout_toRightOf="@+id/tvsr"
+        android:layout_toEndOf="@+id/tvsr" />
+
+    <TextView
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="#000000"
+        android:layout_marginLeft="40dp"
+        android:textSize="15sp"
+        android:id="@+id/tvtc"
+        android:layout_alignTop="@+id/tvpc"
+        android:layout_toRightOf="@+id/tvsn"
+        android:layout_toEndOf="@+id/tvsn" />
+    <TextView
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/tvpc"
+        android:layout_alignTop="@+id/tvac"
+        android:layout_toRightOf="@+id/tvtc"
+        android:layout_toEndOf="@+id/tvtc" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/tvac"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvpc"
+        android:layout_toEndOf="@+id/tvpc"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

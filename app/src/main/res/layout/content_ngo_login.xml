@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="info.androidhive.pathshala.activity.NgoLogin"
+    tools:showIn="@layout/activity_ngo_login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@drawable/viewattendance"
+        android:id="@+id/ngoviewattendance"
+        android:onClick="ngoviewstart"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dashboard"
+        android:id="@+id/ngodashboard"
+        android:layout_marginTop="30dp"
+        android:onClick="dashboardstart"
+        android:layout_below="@+id/ngoviewattendance"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@drawable/overallanalysis"
+        android:id="@+id/ngoOverall"
+        android:onClick="overallanalysisstart"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/ngodashboard"
+        android:layout_alignRight="@+id/ngoviewattendance"
+        android:layout_alignEnd="@+id/ngoviewattendance" />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@drawable/centeranalysis"
+        android:layout_marginTop="30dip"
+        android:onClick="ngocenteranalysis"
+        android:id="@+id/ngoCenter"
+        android:layout_below="@+id/ngoOverall"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@drawable/zoneanalysis"
+        android:id="@+id/ngoZone"
+        android:onClick="zoneanalysisbutton"
+        android:layout_marginTop="30dip"
+        android:layout_below="@+id/ngoCenter"
+        android:layout_alignLeft="@+id/ngoCenter"
+        android:layout_alignStart="@+id/ngoCenter" />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@drawable/logout"
+        android:id="@+id/logoutb"
+        android:onClick="logoutlogout"
+        android:layout_below="@+id/ngoZone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/ngoZone"
+        android:layout_alignStart="@+id/ngoZone"
+        android:layout_marginBottom="30dp" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

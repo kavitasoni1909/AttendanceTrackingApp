@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="info.androidhive.pathshala.activity.OverallAnalysisStart"
+    tools:showIn="@layout/activity_overall_analysis_start">
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:text="To Date"
+        android:background="#8053c68c"
+        android:id="@+id/todateb"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/fromdateb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="40dp"
+        android:background="#40b86614"
+        android:textColor="#000000"
+        android:id="@+id/todatetV"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_alignTop="@+id/todateb"
+        android:layout_toRightOf="@+id/todateb"
+        android:layout_toEndOf="@+id/todateb" />
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:text="From Date"
+        android:background="#8053c68c"
+        android:id="@+id/fromdateb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="40dip"
+        android:background="#40b86614"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dip"
+        android:id="@+id/fromdatetV"
+        android:layout_alignTop="@+id/fromdateb"
+        android:layout_toRightOf="@+id/fromdateb"
+        android:layout_toEndOf="@+id/fromdateb" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROCEED"
+        android:background="#8053c68c"
+        android:layout_marginTop="20dip"
+        android:id="@+id/proceedoverall"
+        android:onClick="overallanalysis"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

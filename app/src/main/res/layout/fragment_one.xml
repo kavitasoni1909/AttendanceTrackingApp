@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="info.androidhive.pathshala.fragments.OneFragment">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Ngo-Email"
+        android:textSize="20sp"
+        android:id="@+id/editText1"
+        android:background="#40b86614"
+        android:layout_marginTop="149dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:background="#40b86614"
+        android:layout_marginTop="5dip"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignStart="@+id/editText1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="15sp"
+        android:background="#8053c68c"
+        android:textColor="#000000"
+        android:id="@+id/button1"
+        android:onClick="login1"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

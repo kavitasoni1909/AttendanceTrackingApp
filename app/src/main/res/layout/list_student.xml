@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:visibility="invisible"
+        android:layout_marginRight="5dp"
+        android:id="@+id/tvId"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="roll"
+        android:id="@+id/tvRoll"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvId"
+        android:layout_toEndOf="@+id/tvId"
+        android:layout_marginLeft="5dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:id="@+id/tvName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvRoll"
+        android:layout_toEndOf="@+id/tvRoll"
+        android:layout_marginLeft="5dip" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submit"
+        android:tag="checkbox1"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="88dp"
+        android:layout_marginEnd="88dp" />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="checkbox2"
+        android:onClick="submit2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp" />
+
+
+
+</RelativeLayout>

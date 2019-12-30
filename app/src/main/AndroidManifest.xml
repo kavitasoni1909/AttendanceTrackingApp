@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.pathshala">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".activity.IconTextTabsActivity"
+            android:label="@string/title_activity_icon_text_tabs">
+
+            <!--
+            intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter
+            -->
+        </activity>
+        <activity
+            android:name=".activity.Centerlogin"
+            android:label="Pathshala"
+            android:theme="@style/MyMaterialTheme">
+            <!--intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter-->
+        </activity>
+        <activity
+            android:name=".activity.Takeattendance"
+            android:label="@string/title_activity_takeattendance"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.Viewattendance"
+            android:label="@string/title_activity_viewattendance"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.Defaulters"
+            android:label="@string/title_activity_defaulters"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.DefaulterStart"
+            android:label="@string/title_activity_defaulter_start"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.AnalysisStart"
+            android:label="@string/title_activity_analysis_start"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.Analysis"
+            android:label="@string/title_activity_analysis"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.NgoLogin"
+            android:label="@string/title_activity_ngo_login"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.Ngoviewstart"
+            android:label="@string/title_activity_ngoviewstart"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.Ngoviewattendance"
+            android:label="@string/title_activity_ngoviewattendance"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.DashBoardStart"
+            android:label="@string/title_activity_dash_board_start"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.DashBoard"
+            android:label="@string/title_activity_dash_board"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.OverallAnalysis"
+            android:label="@string/title_activity_overall_analysis"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.OverallAnalysisStart"
+            android:label="@string/title_activity_overall_analysis_start"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.NgoCAnalysis"
+            android:label="@string/title_activity_ngo_canalysis"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.TakeAttendanceStart"
+            android:label="@string/title_activity_take_attendance_start"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.ViewAttendanceStart"
+            android:label="@string/title_activity_view_attendance_start"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.ZoneAnalysisStart"
+            android:label="@string/title_activity_zone_analysis_start"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.ZoneAnalysis"
+            android:label="@string/title_activity_zone_analysis"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.Splash"
+            android:label="Pathshala"
+            android:theme="@style/MyMaterialTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="info.androidhive.pathshala.activity.DashBoardStart"
+    tools:showIn="@layout/activity_dash_board_start">
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:text="From Date"
+        android:background="#8053c68c"
+        android:layout_marginTop="10dip"
+        android:id="@+id/dashfdate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:id="@+id/tdfdate"
+        android:layout_marginLeft="10dip"
+        android:background="#40b86614"
+        android:layout_alignBottom="@+id/dashfdate"
+        android:layout_toRightOf="@+id/dashfdate"
+        android:layout_toEndOf="@+id/dashfdate" />
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:text="To Date"
+        android:background="#8053c68c"
+        android:id="@+id/dashtdate"
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/dashfdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:id="@+id/tdtdate"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#40b86614"
+        android:layout_alignBottom="@+id/dashtdate"
+        android:layout_toRightOf="@+id/dashtdate"
+        android:layout_toEndOf="@+id/dashtdate" />
+
+
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="40dp"
+        android:hint="center location"
+        android:id="@+id/editClocation"
+        android:background="#40b86614"
+        android:layout_marginTop="25dip"
+        android:layout_below="@+id/tdtdate"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:hint="course name"
+        android:id="@+id/editCourse"
+        android:background="#40b86614"
+        android:layout_marginTop="15dip"
+        android:layout_below="@+id/editClocation"
+        android:layout_alignLeft="@+id/editClocation"
+        android:layout_alignStart="@+id/editClocation" />
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:text="Students with attendance below :"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/textper"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editCourse"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:id="@+id/editTpercentage"
+        android:background="#40b86614"
+        android:layout_alignBottom="@+id/textper"
+        android:layout_toRightOf="@+id/textper"
+        android:layout_toEndOf="@+id/textper" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginLeft="5dip"
+        android:id="@+id/tVper"
+        android:layout_alignTop="@+id/editTpercentage"
+        android:layout_toRightOf="@+id/editTpercentage"
+        android:layout_toEndOf="@+id/editTpercentage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROCEED"
+        android:background="#8053c68c"
+        android:id="@+id/dashproceed"
+        android:onClick="dashpro"
+        android:layout_marginLeft="50dip"
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/textper"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="info.androidhive.pathshala.fragments.TwoFragment">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/editText3"
+        android:hint="Ngo-Email"
+        android:textSize="20sp"
+        android:background="#40b86614"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="149dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/editText4"
+        android:hint="Center-Location"
+        android:layout_marginTop="5dip"
+        android:textSize="20sp"
+        android:background="#40b86614"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="15sp"
+        android:background="#8053c68c"
+        android:textColor="#000000"
+        android:id="@+id/buttoncenterlogin"
+        android:onClick="login2"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp" />
+</RelativeLayout>

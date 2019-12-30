@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="info.androidhive.pathshala.activity.Ngoviewstart"
+    tools:showIn="@layout/activity_ngoviewstart">
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:text="From Date"
+        android:background="#8053c68c"
+        android:id="@+id/bfdate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/tVfdate"
+        android:layout_marginLeft="10dip"
+        android:background="#40b86614"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/bfdate"
+        android:layout_toRightOf="@+id/bfdate"
+        android:layout_toEndOf="@+id/bfdate" />
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:text="To Date"
+        android:id="@+id/btdate"
+        android:background="#8053c68c"
+        android:layout_below="@+id/bfdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:id="@+id/tVtdate"
+        android:background="#40b86614"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dip"
+        android:layout_alignTop="@+id/btdate"
+        android:layout_toRightOf="@+id/btdate"
+        android:layout_toEndOf="@+id/btdate" />
+
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:hint="center location"
+        android:id="@+id/editclocation"
+        android:background="#40b86614"
+        android:layout_marginTop="25dip"
+        android:layout_below="@+id/btdate"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="course name"
+        android:id="@+id/editcrsname"
+        android:background="#40b86614"
+        android:layout_marginTop="15dip"
+        android:layout_below="@+id/editclocation"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROCEED"
+        android:id="@+id/bPro"
+        android:background="#8053c68c"
+        android:onClick="bproceed"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/editcrsname"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

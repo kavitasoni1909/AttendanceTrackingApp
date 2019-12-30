@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="info.androidhive.pathshala.activity.Centerlogin"
+    tools:showIn="@layout/activity_centerlogin">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/takeattendance"
+        android:textColor="#b3bbcc"
+        android:textSize="20sp"
+        android:id="@+id/sample"
+        android:onClick="takeattendance"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/viewattendance"
+        android:onClick="viewattendance"
+        android:id="@+id/bview"
+        android:layout_below="@+id/sample"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/dashboard"
+        android:onClick="getdefaulters"
+        android:id="@+id/bdefaulter"
+        android:layout_below="@+id/bview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/analysis"
+        android:onClick="getanalysis"
+        android:id="@+id/banalysis"
+        android:layout_below="@+id/bdefaulter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/sendatt"
+        android:onClick="sendoffline"
+        android:id="@+id/bsendoffline"
+        android:layout_below="@+id/banalysis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/logout"
+        android:id="@+id/blogout"
+        android:onClick="logout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/bsendoffline"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+</ScrollView>

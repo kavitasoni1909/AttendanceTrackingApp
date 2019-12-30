@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="info.androidhive.pathshala.activity.AnalysisStart"
+    tools:showIn="@layout/activity_analysis_start">
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:text="From Date"
+        android:background="#8053c68c"
+        android:id="@+id/bfromdate"
+        android:layout_marginLeft="10dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="81dp" />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:background="#40b86614"
+        android:textColor="#000000"
+        android:paddingTop="10dip"
+        android:paddingLeft="10dip"
+        android:id="@+id/tvfromdate"
+        android:layout_marginLeft="10dip"
+        android:layout_alignBottom="@+id/bfromdate"
+        android:layout_toRightOf="@+id/bfromdate"
+        android:layout_toEndOf="@+id/bfromdate" />
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:text="To Date"
+        android:background="#8053c68c"
+        android:id="@+id/btodate"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@+id/bfromdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:background="#40b86614"
+        android:textColor="#000000"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip"
+        android:id="@+id/tvtodate"
+        android:layout_marginLeft="10dip"
+        android:layout_alignBottom="@+id/btodate"
+        android:layout_toRightOf="@+id/btodate"
+        android:layout_toEndOf="@+id/btodate" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROCEED"
+        android:background="#8053c68c"
+        android:id="@+id/bproceed"
+        android:onClick="proceed"
+        android:layout_below="@+id/btodate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+</RelativeLayout>

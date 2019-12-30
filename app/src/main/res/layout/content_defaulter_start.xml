@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="info.androidhive.pathshala.activity.DefaulterStart"
+    tools:showIn="@layout/activity_defaulter_start">
+
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:text="From Date"
+        android:background="#8053c68c"
+        android:id="@+id/buttonfromdate"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:background="#40b86614"
+        android:id="@+id/textViewfromdate"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/buttonfromdate"
+        android:layout_toRightOf="@+id/buttonfromdate"
+        android:layout_toEndOf="@+id/buttonfromdate"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp" />
+
+    <Button
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:text="To Date"
+        android:background="#8053c68c"
+        android:id="@+id/buttontodate"
+        android:layout_below="@+id/buttonfromdate"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:background="#40b86614"
+        android:textColor="#000000"
+        android:id="@+id/textViewtodate"
+        android:layout_alignTop="@+id/buttontodate"
+        android:layout_alignLeft="@+id/textViewfromdate"
+        android:layout_alignStart="@+id/textViewfromdate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COURSE NAME"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/buttontodate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+
+
+    <Spinner
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnercrsname"
+        android:layout_marginTop="10dip"
+        android:background="#40b86614"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:text="PROCEED"
+        android:background="#8053c68c"
+        android:id="@+id/buttonproceed"
+        android:onClick="proceedproceed"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/editTextpercentage"
+        android:layout_toLeftOf="@+id/textView10"
+        android:layout_toStartOf="@+id/textView10" />
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:text="Students with attendance below :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:id="@+id/textView"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@+id/spinnercrsname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dip"
+        android:background="#40b86614"
+        android:id="@+id/editTextpercentage"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginLeft="5dip"
+        android:id="@+id/textViewperdisplay"
+        android:layout_alignBottom="@+id/editTextpercentage"
+        android:layout_toRightOf="@+id/editTextpercentage"
+        android:layout_toEndOf="@+id/editTextpercentage" />
+
+
+
+</RelativeLayout>
